@@ -4,7 +4,17 @@ Bootstrap a Spring application started with ``main()`` method
     public static void main(String[] args) {
           SpringApplication.run(MySpringConfiguration.class, args);
       }
-      
+Startup information logging can be turned off by setting spring.main.log-startup-info to false
+
+    spring.main.log-startup-info=false
+
+This can be done java class also
+
+    public static void main(String[] args) {
+    		new SpringApplicationBuilder(Application.class)
+    				.logStartupInfo(false)
+    				.run(args);
+    
 ##### 1.1. Startup Failure 
 
 ##### 1.2. Lazy Initialization
