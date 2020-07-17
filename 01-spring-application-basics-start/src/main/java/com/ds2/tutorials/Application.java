@@ -11,14 +11,10 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	//TODO-1 uncomment the below to disable spring application start up information default log messages
 
-	// You can disable those three log messages by configuring your SpringApplication not to log startup info:
-
-	/*public static void main(String[] args) {
-		new SpringApplicationBuilder(Application.class)
+	/*new SpringApplicationBuilder(Application.class)
 				.logStartupInfo(false)
-				.run(args);
-	}*/
-
+				.run(args);*/
 
 }
